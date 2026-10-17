@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  site: 'https://andisaputera.netlify.app',
+  base: '/',
   devToolbar: {
     enabled: false
   },
