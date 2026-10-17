@@ -19,7 +19,7 @@ const external = siteData.navExternal
   })
   .filter(Boolean) as { label: string; desc: string; url: string }[];
 ---
-<!--
+
 <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
   <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
@@ -38,64 +38,6 @@ const external = siteData.navExternal
       </div>
 
       <div class="flex items-center gap-3">
--->
-      <!--
-  Ganti semua baris dari <header ...> sampai tepat SEBELUM <div id="overlay-menu" ...>
-  dengan blok ini. Bagian overlay-menu, <style>, dan <script> milikmu tidakit  diubah.
--->
-<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
-  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a href="#home" class="text-lg font-bold gradient-text tracking-tight shrink-0">
-        {personalData.name}
-      </a>
-
-      <div class="hidden lg:flex items-center gap-6">
-        {
-          sections.map((item) => (
-            <a href={item.href} class="nav-link nav-link-sm">
-              {item.shortLabel}
-            </a>
-          ))
-        }
-      </div>
-
-      <div class="flex items-center gap-3">
-        <!-- Tombol ganti tema (gelap / terang) -->
-        <label class="switch" aria-label="Toggle light and dark theme">
-          <input type="checkbox" id="theme-checkbox" class="input" />
-          <span class="slider"></span>
-          <span class="sun">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="4" fill="#fbbf24"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-            </svg>
-          </span>
-          <span class="moon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-            </svg>
-          </span>
-        </label>
-
-        <!-- Tombol hamburger: membuka menu overlay -->
-        <button
-          id="menu-open-btn"
-          class="hamburger-btn"
-          aria-label="Open menu"
-          aria-haspopup="dialog"
-          aria-controls="overlay-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<!-- Setelah ini langsung lanjut ke <div id="overlay-menu" ...> milikmu --> 
 
 <div
   id="overlay-menu"
