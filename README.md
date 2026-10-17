@@ -321,21 +321,15 @@ This drives your name, bio, contact info, and every social link across the entir
 
 ```json
 {
-  "name": "Your Name Here",
-  "title": "Creative Professional",
-  "photo": "/images/personal/portrait.png",
-  "email": "hello@yourdomain.com",
-  "phone": "(000) 000-0000",
+  "name": "Andi Saputera",
+  "title": "Implementation Specialist",
+  "phone": "(+62) 819 0407 6274",
   "phoneTel": "+10000000000",
-  "location": "City, State",
-  "linkedin": "your-linkedin-handle",
-  "github": "your-github-handle",
-  "instagram": "",
-  "twitter": "",
-  "blog": "https://yourblog.com",
+  "location": "Bandung, Indonesia",
+  "linkedin": "andi-saputera",
+  "github": "https://github.com/andysaputera",
   "education": "Your Degree, Your University",
   "yearsExperience": "5+",
-  "volunteer": "Role, Organization · Year–Year",
   "heroSocialLinks": ["github", "linkedin"],
   "bio": "Short tagline that appears under your name on the hero.",
   "aboutLong": "Full biography shown in the About section."
@@ -355,9 +349,8 @@ Controls your site title, SEO, the header links strip, and the Services section 
 
 ```json
 {
-  "title": "Your Name | Creative Portfolio",
+  
   "description": "Portfolio of a designer and developer...",
-  "tagline": "Designing experiences · Building products · Telling stories",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "retroTvCount": 21,
   "seoKeywords": ["Creative Portfolio", "Web Designer", "UI/UX Design", "..."],
@@ -384,7 +377,7 @@ Controls your site title, SEO, the header links strip, and the Services section 
       "label": "Email",
       "desc": "Project inquiries",
       "personalKey": "email",
-      "urlTemplate": "mailto:{value}"
+      "urlTemplate": ":{value}"
     },
     {
       "label": "Phone",
@@ -714,7 +707,8 @@ Timeline of your certifications, courses, and in-progress work.
     "status": "Earned",
     "type": "certification",
     "description": "Seven-course program covering UX research, wireframing, and prototyping.",
-    "credentialUrl": "https://coursera.org/verify/..."
+    "tags": ["Multi-agent systems", "Memory design", "Prompt hardening", "Data security", "Knowledge systems"]
+    
   },
   {
     "name": "3D Art for Real-Time Engines",

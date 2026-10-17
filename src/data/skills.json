@@ -1,64 +1,46 @@
 {
   "section": {
     "eyebrow": "What I work with",
-    "heading": "Technical Arsenal"
+    "heading": "Core Skills"
   },
   "categories": [
     {
-      "title": "Design & Illustration",
+      "title": "Systems Analysis",
       "skills": [
-        { "name": "Figma",       "icon": "simple-icons:figma" },
-        { "name": "Photoshop",   "icon": "simple-icons:adobephotoshop" },
-        { "name": "Illustrator", "icon": "simple-icons:adobeillustrator" },
-        { "name": "Blender",     "icon": "simple-icons:blender" },
-        { "name": "Sketch",      "icon": "simple-icons:sketch" }
+        "Requirements & Business Process Analysis",
+        "Gap Analysis",
+        "Process & Data Flow",
+        "Data Mapping",
+        "Functional Specification",
+        "SRS Documentation",
+        "System Integration"
       ]
     },
     {
-      "title": "Web & Frontend",
+      "title": "Data & Database",
       "skills": [
-        { "name": "HTML5",      "icon": "simple-icons:html5" },
-        { "name": "CSS3",       "icon": "simple-icons:css3" },
-        { "name": "JavaScript", "icon": "simple-icons:javascript" },
-        { "name": "TypeScript", "icon": "simple-icons:typescript" },
-        { "name": "React",      "icon": "simple-icons:react" },
-        { "name": "Bootstrap",  "icon": "simple-icons:bootstrap" }
+        "SQL",
+        "Relational Database",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB (NoSQL)",
+        "Data Validation & Reconciliation",
+        "Data Migration",
+        "Data Structure Analysis",
+        "Advanced Excel"
       ]
     },
     {
-      "title": "Motion, 3D & Video",
+      "title": "Implementation & Stakeholder Management",
       "skills": [
-        { "name": "Three.js",     "icon": "simple-icons:threedotjs" },
-        { "name": "After Effects","icon": "simple-icons:adobeaftereffects" },
-        { "name": "Premiere Pro", "icon": "simple-icons:adobepremierepro" },
-        { "name": "Photoshop",    "icon": "simple-icons:adobephotoshop" }
-      ]
-    },
-    {
-      "title": "Platforms & Publishing",
-      "skills": [
-        { "name": "WordPress", "icon": "simple-icons:wordpress" },
-        { "name": "Drupal",    "icon": "simple-icons:drupal" },
-        { "name": "Hugo",      "icon": "simple-icons:hugo" },
-        { "name": "AWS",       "icon": "simple-icons:amazonaws" }
-      ]
-    },
-    {
-      "title": "Dev & Workflow Tools",
-      "skills": [
-        { "name": "Git",      "icon": "simple-icons:git" },
-        { "name": "GitHub",   "icon": "simple-icons:github" },
-        { "name": "Bash",     "icon": "simple-icons:gnubash" },
-        { "name": "Markdown", "icon": "simple-icons:markdown" }
-      ]
-    },
-    {
-      "title": "Data & Infrastructure",
-      "skills": [
-        { "name": "SQLite",     "icon": "simple-icons:sqlite" },
-        { "name": "Nginx",      "icon": "simple-icons:nginx" },
-        { "name": "Docker",     "icon": "simple-icons:docker" },
-        { "name": "Prometheus", "icon": "simple-icons:prometheus" }
+        "UAT",
+        "Functional Testing",
+        "Defect Management",
+        "Software Implementation & Deployment",
+        "Application Support",
+        "Stakeholder Management",
+        "Cross-Functional Collaboration",
+        "Technical Training"
       ]
     }
   ]

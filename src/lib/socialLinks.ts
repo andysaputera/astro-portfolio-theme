@@ -10,6 +10,8 @@ interface SocialConfig {
 
 // {v} in urlTemplate is replaced with the raw handle value from personal.json at call time.
 const SOCIAL_CONFIG: Record<string, SocialConfig> = {
+  email: {     icon: 'mdi:email', label: 'Email',    urlTemplate: 'mailto:{v}',    icon: 'simple-icons:gmail',   // atau 'mdi:email-outline'
+  },
   github: { label: 'GitHub', urlTemplate: 'https://github.com/{v}', icon: 'simple-icons:github' },
   linkedin: {
     label: 'LinkedIn',
@@ -71,7 +73,7 @@ const DISPLAY_ORDER = [
   'github',
   'linkedin',
   'gitlab',
-  'twitter',
+  'email',
   'instagram',
   'youtube',
   'twitch',

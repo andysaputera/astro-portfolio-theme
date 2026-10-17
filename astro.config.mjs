@@ -2,6 +2,10 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  devToolbar: {
+    enabled: false
+  },
+
   // SITE_URL and BASE_PATH are injected by Docker / CI; defaults keep local dev working without env vars.
   site: process.env.SITE_URL || 'https://www.example.com',
   base: process.env.BASE_PATH || '/',

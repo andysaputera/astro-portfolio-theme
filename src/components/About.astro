@@ -1,192 +1,211 @@
 ---
 import personalData from '../data/personal.json';
+const coreFocus = [
+  'Business & System Analysis',
+  'Requirements Gathering',
+  'Business Process Mapping',
+  'Functional Specification & Documentation',
+  'System Testing & UAT',
+  'System Implementation & Go-Live',
+  'Stakeholder Coordination & Collaboration',
+  'User Training & Post-Go-Live Support',
+];
 ---
 
 <section id="about" class="py-24 bg-slate-900/30" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12 reveal">
         <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
           Get to know me
         </p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-0 section-title">About Me</h2>
       </div>
-
-      <div class="card reveal" style="transition-delay: 0.15s;">
-        <p class="text-lg text-slate-300 leading-relaxed">
-          {personalData.aboutLong}
-        </p>
-
-        <hr class="gradient-divider my-8" />
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex items-start gap-4">
-            <div
-              class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
-            >
-              <svg
-                class="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-white font-semibold mb-1">Role</h3>
-              <p class="text-slate-400 text-sm">{personalData.title}</p>
-            </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        <div class="reveal lg:col-span-2 lg:pr-8" style="transition-delay: 0.15s;">
+          <div class="space-y-4">
+            {
+              (Array.isArray(personalData.aboutLong)
+                ? personalData.aboutLong
+                : [personalData.aboutLong]
+              ).map((para) => (
+                <p class="text-lg text-slate-300 leading-relaxed">{para}</p>
+              ))
+            }
           </div>
 
-          <div class="flex items-start gap-4">
-            <div
-              class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
-            >
-              <svg
-                class="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-white font-semibold mb-1">Location</h3>
-              <p class="text-slate-400 text-sm">{personalData.location}</p>
-            </div>
-          </div>
+          <hr class="gradient-divider my-8" />
 
-          <div class="flex items-start gap-4">
-            <div
-              class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
-            >
-              <svg
-                class="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-white font-semibold mb-1">Experience</h3>
-              <p class="text-slate-400 text-sm">
-                {personalData.yearsExperience} Years of Experience
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <div
-              class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
-            >
-              <svg
-                class="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-white font-semibold mb-1">Education</h3>
-              <p class="text-slate-400 text-sm">{personalData.education}</p>
-            </div>
-          </div>
-
-          {
-            personalData.volunteer && (
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg
-                    class="w-5 h-5 text-accent"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-white font-semibold mb-1">Volunteer</h3>
-                  <p class="text-slate-400 text-sm">{personalData.volunteer}</p>
-                </div>
+                <svg
+                  class="w-5 h-5 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
               </div>
-            )
-          }
-
-          {
-            personalData.portfolioUrl && (
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg
-                    class="w-5 h-5 text-accent"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-white font-semibold mb-1">Portfolio</h3>
-                  <a
-                    href={personalData.portfolioUrl}
-                    target="_blank"
-                    rel="noopener"
-                    class="text-slate-400 text-sm hover:text-accent transition-colors"
-                  >
-                    {personalData.portfolioUrl.replace(/^https?:\/\//, '')}
-                  </a>
-                </div>
+              <div>
+                <h3 class="text-white font-semibold mb-1">Role</h3>
+                <p class="text-slate-400 text-sm">{personalData.title}</p>
               </div>
-            )
-          }
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold mb-1">Location</h3>
+                <p class="text-slate-400 text-sm">{personalData.location}</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold mb-1">Experience</h3>
+                <p class="text-slate-400 text-sm">
+                  {personalData.yearsExperience}
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5"
+              >
+                <svg
+                  class="w-5 h-5 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-white font-semibold mb-1">Education</h3>
+                <p class="text-slate-400 text-sm">{personalData.education}</p>
+              </div>
+            </div>
+
+            {
+              personalData.portfolioUrl && (
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg
+                      class="w-5 h-5 text-accent"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold mb-1">Portfolio</h3>
+                    <a
+                      href={personalData.portfolioUrl}
+                      target="_blank"
+                      rel="noopener"
+                      class="text-slate-400 text-sm hover:text-accent transition-colors"
+                    >
+                      {personalData.portfolioUrl.replace(/^https?:\/\//, '')}
+                    </a>
+                  </div>
+                </div>
+              )
+            }
+          </div>
         </div>
+
+       
+        <aside class="strengths-card reveal" style="transition-delay: 0.3s;">
+          <h3 class="strengths-title">Core Strengths</h3>
+          <ul class="strengths-list">
+            {
+              coreFocus.map((item) => (
+                <li>
+                  <svg
+                    class="strengths-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </aside>
       </div>
     </div>
   </div>
@@ -206,3 +225,88 @@ import personalData from '../data/personal.json';
     io.observe(el);
   });
 </script>
+
+<style>
+ 
+  #about {
+    --w-bg: rgba(8, 14, 32, 0.72);
+    --w-border: rgba(148, 163, 184, 0.18);
+    --w-accent: #1e9bff;
+    --w-text: #f4f4f5;
+    --w-body: #a9b4c8;
+    --w-muted: #7c8aa5;
+    --w-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  }
+
+  /* Kartu: kotak, border tipis */
+  .strengths-card {
+    background: var(--w-bg);
+    border: 1px solid var(--w-border);
+    border-radius: 0;
+    padding: 1.3rem;
+    text-align: left;
+    transition: border-color 0.2s ease;
+  }
+  .strengths-card:hover {
+    border-color: rgba(30, 155, 255, 0.45);
+  }
+
+  .strengths-title {
+    margin: 0 0 1.25rem;
+    font-family: var(--w-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--w-text);
+  }
+
+  .strengths-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Tiap item dipisah garis tipis seperti tabel */
+  .strengths-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--w-border);
+    color: var(--w-body);
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+  .strengths-list li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .strengths-list li:last-child {
+    padding-bottom: 0;
+  }
+
+  .strengths-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.15rem;
+    flex-shrink: 0;
+    color: var(--w-accent);
+  }
+
+  /* Tema terang */
+  :global([data-theme='light']) #about {
+    --w-bg: #ffffff;
+    --w-border: #e4e4e7;
+    --w-text: #18181b;
+    --w-body: #52525b;
+    --w-muted: #71717a;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .strengths-card {
+      transition: none;
+    }
+  }
+</style>

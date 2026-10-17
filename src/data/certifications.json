@@ -1,47 +1,50 @@
 [
   {
-    "name": "Google UX Design Certificate",
-    "issuer": "Google / Coursera",
-    "date": "May 2026",
-    "status": "Earned",
-    "type": "certification",
-    "description": "Seven-course program covering UX research, wireframing, prototyping, and usability testing. Emphasis on human-centered design principles and building accessible, inclusive user experiences.",
-    "credentialUrl": ""
+    "name": "Budget Planning & RBA",
+    "status": "BUSINESS PROCESS ANALYSIS",
+    "tags": ["Requirements Analysis", "Business Rules", "Data Validation", "Functional Testing"],
+    "problem": "Hospital budget planning requires consistent workflows, accurate calculations, and clear validation of budget changes.",
+    "contribution": "Analyzed budget workflows, validated RBA data and budget adjustments, and checked business rules across related processes.",
+    "outcome": "Supported more consistent budget workflows and validation of financial planning data."
   },
   {
-    "name": "Freelance Business Foundations",
-    "issuer": "CreativeLive",
-    "date": "December 2025",
-    "status": "Earned",
-    "type": "certification",
-    "description": "Business-side program covering client acquisition, proposal writing, contracts, pricing strategy, and scope management. A practical toolkit for running an independent creative practice.",
-    "credentialUrl": ""
+    "name": "Accounting Management",
+    "status": "FUNCTIONAL VALIDATION",
+    "tags": ["Workflow Analysis", "QA Testing", "Defect Reporting", "Data Integrity"],
+    "problem": "Financial workflows require reliable transaction data, accurate calculations, and validation of business rules.",
+    "contribution": "Reviewed transaction workflows, tested input validations and calculations, and documented discrepancies between actual and expected results.",
+    "outcome": "Helped identify functional issues and improve the consistency of financial transaction processing."
   },
   {
-    "name": "Motion Design with After Effects",
-    "issuer": "School of Motion",
-    "date": "August 2024",
-    "status": "Completed",
-    "type": "professional-development",
-    "description": "Motion principles, keyframe animation, easing curves, and compositing applied to title sequences, UI animations, and explainer video production.",
-    "credentialUrl": ""
+    "name": "Pharmacy Management",
+    "status": "HEALTHCARE OPERATIONS",
+    "tags": ["User Requirements", "Workflow Analysis", "System Validation", "User Support"],
+    "problem": "Pharmacy workflows depend on consistent operational processes and accurate information across relevant system functions..",
+    "contribution": "Worked with users to understand pharmacy processes, clarify functional requirements, and validate relevant system workflows..",
+    "outcome": "Supported alignment between pharmacy user needs and expected system behavior."
   },
-  {
-    "name": "3D Art for Real-Time Engines",
-    "issuer": "Unity Learn / Epic Games",
-    "date": "Target: Q3 2027",
-    "status": "In Progress",
-    "type": "in-progress",
-    "description": "Bridging offline rendering knowledge with real-time constraints — optimizing assets, baking maps, and building environments in Unreal Engine for interactive and immersive projects.",
-    "credentialUrl": ""
+   {
+    "name": "Asset Management",
+    "status": "ASSET OPERATIONS",
+    "tags": ["Process Mapping", "Inventory", "Asset Tracking", "Issue Follow-up"],
+    "problem": "Hospital asset operations require traceable records, reliable inventory information, and practical identification workflows..",
+    "contribution": "Validated asset records and inventory workflows, including barcode or QR-based identification processes, and followed up on operational issues.",
+    "outcome": "Supported asset traceability and more reliable validation of asset management processes.."
   },
-  {
-    "name": "Creative Coding & Generative AI",
-    "issuer": "Domestika / Runway",
-    "date": "Target: 2028",
-    "status": "In Progress",
-    "type": "in-progress",
-    "description": "Exploring the intersection of code, generative models, and visual art — building interactive installations, AI-assisted design tools, and procedural media for web and physical spaces.",
-    "credentialUrl": ""
+   {
+    "name": "Training & Certification Management",
+    "status": "TRAINING & CERTIFICATION",
+    "tags": ["Business Rules", "Functional Testing", "Data Validation", "UAT Support"],
+    "problem": "Training records and certification monitoring require clear verification rules, reliable filters, and accurate training-hour calculations.",
+    "contribution": "Validated training schedules, certificate verification, monitoring filters, status indicators, and training-hour calculations by year.",
+    "outcome": "Supported reliable training records and certification monitoring based on defined business rules."
+  },
+   {
+    "name": "Requirements Analysis & UAT",
+    "status": "IMPLEMENTATION & QA",
+    "tags": ["Requirements", "Functional Documentation", "SIT & UAT", "Stakeholder Coordination", "Go-live Support"],
+    "problem": "Differences between user expectations and system behavior can cause implementation issues and delays during validation.",
+    "contribution": "Translated user needs into functional requirements, coordinated with technical teams, supported testing and UAT, and tracked defects through follow-up and retesting.",
+    "outcome": "Helped improve requirement clarity, defect visibility, and readiness for system implementation.."
   }
 ]

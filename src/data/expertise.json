@@ -3,26 +3,31 @@
     {
       "key": "sysadmin",
       "icon": "server-stack",
-      "title": "Design & Art Direction",
-      "description": "Visual identity, layout, typography, and the aesthetic decisions that make people stop and look twice. Whether print or screen, the goal is the same — work that holds up."
+      "title": "Implementation Specialist",
+      "company": "PT Jasamedika Saranatama",
+      "location": "Bandung, Indonesia",
+      "periode": "May 2023 - Present",
+      "description": "•Requirement Analysis & Solution Design: Collaborate with business stakeholders, product owners, and end-users to gather, analyze, and document business requirements. •Functional Configuration: Collaborated closely with technical and development teams to define functional requirements, prepare functional specifications, and validate system customizations, including new fields, menus, workflows, and system enhancements based on business requirements. •Customization & Development: Work closely with technical teams to specify and validate the development of customizations, including new fields, versions, menus, and system enhancements based on business requirements. •Testing & Quality Assurance: Lead and participate in system testing cycles-including Unit Testing, SIT (System Integration Testing), and UAT (User Acceptance Testing)-to ensure solutions are fit for purpose. •Implementation & Support: Support the end-to-end implementation lifecycle, including data migration, go-live, and post-production support. Troubleshoot and resolve functional issues. •Training & Documentation: Create detailed functional specification documents, configuration guides, and user manuals. Conduct training sessions for end-users and key stakeholders."
+
     },
     {
       "key": "webdev",
       "icon": "code-bracket-square",
-      "title": "Web Design & Development",
-      "description": "From wireframe to deployment — building sites and apps that look considered, perform well, and give visitors exactly what they came for."
+      "title": "Sales Support Administrator",
+      "company": "PT Javas Karya Tripta",
+      "location": "Bogor, Indonesia",
+      "periode": "Nov 2021 - Dec 2022",
+      "description": "•Managed sales processes from issuing delivery notes and sales invoices to invoice submission. •Performed bank deposits, including both cash and giro transactions. •Executed goods handover based on invoice recapitulation. •Generated data-driven sales reports to support strategic decision-making and optimize sales team performance. •Conducted attendance recaps and regularly updated employee records."
     },
     {
       "key": "freelance",
       "icon": "user-circle",
-      "title": "Creative Freelance",
-      "description": "Independent project work in photography, video, 3D, illustration, or wherever the brief leads. Direct to work with, flexible, and invested in the outcome."
-    },
-    {
-      "key": "leadership",
-      "icon": "users",
-      "title": "Collaboration & Direction",
-      "description": "Working alongside teams, clients, and stakeholders to take a project from idea to shipped — clear communication, honest timelines, and work that actually gets done."
+      "title": "Administrative Support Officer",
+      "company": "PT Sumatera Jaya Persada",
+      "location": "Bogor, Indonesia",
+      "periode": "Feb 2020 - Dec 2020",
+      "description": "•Developed and maintained a systematic digital archiving system for operational data, improving document retrieval time. •Prepared daily purchase orders, invoices, and delivery notes. •Coordinated with related departments (Logistics, Supply Chain, PPIC, etc.) regarding daily transactions. •Prepared administrative reports for the Operational Manager to present periodic data progress."
     }
+   
   ]
 }

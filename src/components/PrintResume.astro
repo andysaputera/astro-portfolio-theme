@@ -38,7 +38,7 @@ const inProgressCerts = certsData.filter(c => c.status !== 'Earned');
       {skillsData.categories.map(category => (
         <div class="skill-row">
           <span class="skill-category">{category.title}</span>
-          <span class="skill-items">{category.skills.map(s => s.name).join(' · ')}</span>
+          <span class="skill-items">{category.skills.join(' · ')}</span>
         </div>
       ))}
     </div>
@@ -65,31 +65,13 @@ const inProgressCerts = certsData.filter(c => c.status !== 'Earned');
     </div>
   </section>
 
-  <section class="resume-section">
-    <h2 class="section-title">Notable Projects</h2>
-    <div class="projects-list">
-      {resumeProjects.map(project => project && (
-        <div class="project-item">
-          <div class="project-header">
-            <span class="project-title">{project.title}</span>
-            <span class="project-tags">{project.tags.slice(0, 4).join(' · ')}</span>
-          </div>
-          <p class="project-desc">{project.description}</p>
-        </div>
-      ))}
-    </div>
-  </section>
-
   <div class="resume-footer-row">
     <section class="resume-section">
       <h2 class="section-title">Education</h2>
       <p class="body-text">{personal.education}</p>
     </section>
 
-    <section class="resume-section">
-      <h2 class="section-title">Volunteer</h2>
-      <p class="body-text">{personal.volunteer}</p>
-    </section>
+    
   </div>
 
 </div>
@@ -267,10 +249,5 @@ const inProgressCerts = certsData.filter(c => c.status !== 'Earned');
     line-height: 1.4;
   }
 
-  /* Education + Volunteer side by side */
-  .resume-footer-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 24px;
-  }
+ 
 </style>
